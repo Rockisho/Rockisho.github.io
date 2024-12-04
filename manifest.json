@@ -1,6 +1,6 @@
 {
-    "name": "Minha PWA",
-    "short_name": "MinhaPWA",
+    "name": "Minha Calculadora JL",
+    "short_name": "MinhaCalculadora",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#ffffff",
