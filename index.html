@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha PWA</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bem vindo a minha primeira PWA</h1>
-    <h4>Desenvolvida por João Luis</h4>
-    <p>Este é um exemplo de parágrafo</p>
-    <script href="app.js"></script>
+  <div class="calculadora">
+    <div class="display">
+      <input type="text" id="resultado" readonly />
+    </div>
+    <div class="botoes">
+      <button class="btn" onclick="limpar()">C</button>
+      <button class="btn" onclick="deletarUltimo()">DEL</button>
+      <button class="btn" onclick="inserir('/')">/</button>
+      <button class="btn" onclick="inserir('*')">*</button>
+      <button class="btn" onclick="inserir('7')">7</button>
+      <button class="btn" onclick="inserir('8')">8</button>
+      <button class="btn" onclick="inserir('9')">9</button>
+      <button class="btn" onclick="inserir('-')">-</button>
+      <button class="btn" onclick="inserir('4')">4</button>
+      <button class="btn" onclick="inserir('5')">5</button>
+      <button class="btn" onclick="inserir('6')">6</button>
+      <button class="btn" onclick="inserir('+')">+</button>
+      <button class="btn" onclick="inserir('1')">1</button>
+      <button class="btn" onclick="inserir('2')">2</button>
+      <button class="btn" onclick="inserir('3')">3</button>
+      <button class="btn btn-igual" onclick="calcular()">=</button>
+      <button class="btn btn-zero" onclick="inserir('0')">0</button>
+      <button class="btn" onclick="inserir('.')">.</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
