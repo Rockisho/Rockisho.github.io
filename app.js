@@ -4,29 +4,3 @@ if ('ServiceWorker' in navigator){
        .catch(err => console.log('O Registro do Service Worker Falhou: ', err));
 }
 
-// Inserir valor no display
-function inserir(valor) {
-    const resultado = document.getElementById("resultado");
-    resultado.value += valor;
-  }
-  
-  // Limpar o display
-  function limpar() {
-    document.getElementById("resultado").value = "";
-  }
-  
-  // Deletar o último caractere
-  function deletarUltimo() {
-    const resultado = document.getElementById("resultado");
-    resultado.value = resultado.value.slice(0, -1);
-  }
-  
-  // Calcular o resultado
-  function calcular() {
-    try {
-      const resultado = document.getElementById("resultado");
-      resultado.value = eval(resultado.value);
-    } catch {
-      alert("Erro ao calcular! Verifique a expressão.");
-    }
-  }  
